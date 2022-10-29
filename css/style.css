@@ -11,7 +11,8 @@ html{
     --fundoPrincipal: whitesmoke;
     --fontePrincipal: rgb(61, 61, 61);
     --fundoDark: rgb(61, 61, 61);
-    --fontDark: whitesmoke;
+    --fundoDarkHover: rgb(90, 90, 90);
+    --fontDark: rgb(201, 201, 201);
 }
 body{
     background: var(--fundoPrincipal);
@@ -25,7 +26,7 @@ body.dark{
 /*navbar*/
 nav{
     background: crimson;
-    color: white;
+    color: var(--fontePrincipal);
     font-size: 1.2rem;
     min-height: 5%;
     position: relative;
@@ -47,6 +48,30 @@ nav a{
 nav a:hover{
     color: whitesmoke;
     border-bottom: 1px whitesmoke solid;
+}
+nav #trocaTema{
+    float: right;
+}
+nav .trocaTema{
+    background: white;
+    color: var(--fontePrincipal);
+    border: none;
+    width: 3.0rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-20%);
+}
+nav .trocaTema:hover{
+    background: whitesmoke;
+    color: var(--fontePrincipal);
+}
+nav .trocaTema.dark{
+    background: var(--fundoDark);
+    color: var(--fontDark);
+}
+nav .trocaTema.dark:hover{
+    background: var(--fundoDarkHover);
 }
 /*navbar*/
 
