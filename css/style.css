@@ -19,26 +19,28 @@ body{
     color: var(--fontePrincipal);
 }
 body.dark{
-    background: var(--fundoDark);
+    background: black;
     color: var(--fontDark);
 }
 
 /*navbar*/
 nav{
-    background: crimson;
+    background: #FB50A3;
     color: var(--fontePrincipal);
-    font-size: 1.2rem;
+    font-size: 1rem;
     min-height: 5%;
     position: relative;
 }
 nav.dark{
-    background: black;
+    background: var(--fundoDark);
+}
+nav.dark a{
     color: var(--fontDark);
 }
 nav ul li{
     display: inline-block;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(80%);
     padding: 0px 5px 0px 5px;
 }
 nav a{
@@ -60,15 +62,15 @@ nav .trocaTema{
     height: 1.5rem;
     border-radius: 5px;
     top: 50%;
-    transform: translateY(-20%);
+    transform: translateY(-40%);
 }
 nav .trocaTema:hover{
     background: whitesmoke;
     color: var(--fontePrincipal);
 }
 nav .trocaTema.dark{
-    background: var(--fundoDark);
-    color: var(--fontDark);
+    background: grey;
+    color: ghostwhite;
 }
 nav .trocaTema.dark:hover{
     background: var(--fundoDarkHover);
@@ -77,7 +79,7 @@ nav .trocaTema.dark:hover{
 
 /*footer*/
 footer{
-    background-color: crimson;
+    background-color: #FB50A3;
     width: 100%;
     min-height: 7%;
     color: white;
@@ -86,7 +88,7 @@ footer{
     bottom: 0;
 }
 footer.dark{
-    background: black;
+    background: var(--fundoDark);
     color: var(--fontDark);
 }
 footer p{
