@@ -107,8 +107,10 @@ footer p{
 }
 #divPerfil{
     text-align: center;
-    top: 50%;
-    transform: translateY(50%);
+    margin-top: 2rem;
+}
+.conteudoPerfil{
+    margin: 2rem 2rem;
 }
 /*index*/
 
