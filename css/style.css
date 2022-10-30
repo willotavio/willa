@@ -51,29 +51,30 @@ nav a:hover{
     color: whitesmoke;
     border-bottom: 1px whitesmoke solid;
 }
-nav #trocaTema{
+#trocaTema{
     float: right;
+    list-style: none;
 }
-nav .trocaTema{
-    background: white;
-    color: var(--fontePrincipal);
+.trocaTema{
     border: none;
-    width: 3.0rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.1rem 0.1rem;
     border-radius: 5px;
-    top: 50%;
-    transform: translateY(-40%);
+    background: url('../imgs/svg/light.svg') no-repeat;
 }
-nav .trocaTema:hover{
-    background: whitesmoke;
+.trocaTema:hover{
+    background: url('../imgs/svg/light.svg') no-repeat;
+    filter: brightness(150%);
     color: var(--fontePrincipal);
 }
-nav .trocaTema.dark{
-    background: grey;
+.trocaTema.dark{
+    background: url('../imgs/svg/dark.svg') no-repeat;
     color: ghostwhite;
 }
-nav .trocaTema.dark:hover{
-    background: var(--fundoDarkHover);
+.trocaTema.dark:hover{
+    background: url('../imgs/svg/dark.svg') no-repeat;
+    filter: brightness(150%);
 }
 /*navbar*/
 

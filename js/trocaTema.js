@@ -16,10 +16,10 @@ trocaTema.addEventListener("click", function(){
     }
     var className = document.body.className;
     if(className == "light") {
-        this.textContent = "Light";
+        console.log('Light');
     }
     else {
-        this.textContent = "Dark";
+        console.log('Dark');
     }
 
     let theme = "light";
