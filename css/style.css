@@ -121,11 +121,7 @@ footer p{
 #divPerfil{
     margin: auto;
     text-align: center;
-    margin-top: 2rem;
     width: 50%;
-}
-#divPerfil.dark{
-    border-bottom: 2px solid var(--fonteDark);
 }
 #divPerfil hr{
     border: 1px solid #FB50A3;
@@ -150,7 +146,14 @@ footer p{
 .githubStats.dark{
     background: url('https://github-readme-stats.vercel.app/api?username=willotavio&theme=apprentice&show_icons=true') no-repeat center;
 }
-@media (max-width: 1060px){
+.githubLangs{
+    height: 11rem;
+    background: url('https://github-readme-stats.vercel.app/api/top-langs/?username=willotavio&layout=compact&theme=jolly') no-repeat center;
+}
+.githubLangs.dark{
+    background: url('https://github-readme-stats.vercel.app/api/top-langs/?username=willotavio&layout=compact&theme=apprentice') no-repeat center;
+}
+@media (max-width: 1000px){
     .githubStats{
         height: 10rem;
         background-size: 100%;
@@ -158,9 +161,19 @@ footer p{
     .githubStats.dark{
         background-size: 100%;
     }
+    .githubLangs{
+        height: 10rem;
+        background-size: 100%;
+    }
+    .githubLangs.dark{
+        background-size: 100%;
+    }
+}
+@media (max-width: 500px) and (min-width: 300px){
     footer{
         position: absolute;
     }
+
 }
 /*index*/
 
