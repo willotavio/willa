@@ -3,9 +3,7 @@
     padding: 0;
 }
 html{
-    font-family: Helvetica, sans-serif;/* 
-    color: var(--fontePrincipal);
-    background: var(--fundoPrincipal); */
+    font-family: Helvetica, sans-serif;
 }
 :root{
     --fundoPrincipal: whitesmoke;
@@ -42,7 +40,7 @@ header{
 }
 nav{
     background: #FB50A3;
-    color: var(--fontePrincipal);
+    color: white;
     font-size: 1rem;
     min-height: 5%;
     position: fixed;
@@ -52,6 +50,7 @@ nav{
 }
 nav.dark{
     background: var(--fundoDark);
+    color: var(--fonteDark);
 }
 nav.dark a{
     color: var(--fonteDark);
@@ -70,6 +69,28 @@ nav a:hover{
     color: whitesmoke;
     border-bottom: 1px whitesmoke solid;
 }
+/*navbar*/
+
+/*footer*/
+footer{
+    margin-top: 3rem;
+    background-color: #FB50A3;
+    width: 100%;
+    min-height: 7%;
+    color: white;
+    text-align: center;
+    bottom: 0;
+}
+footer.dark{
+    background: var(--fundoDark);
+    color: var(--fonteDark);
+}
+footer p{
+    top: 50%;
+    transform: translateY(50%);
+}
+/*footer*/
+/*troca tema*/
 #trocaTema{
     float: right;
     list-style: none;
@@ -95,28 +116,7 @@ nav a:hover{
     background: url('../imgs/svg/dark.svg') no-repeat;
     filter: brightness(150%);
 }
-/*navbar*/
-
-/*footer*/
-footer{
-    margin-top: 3rem;
-    background-color: #FB50A3;
-    width: 100%;
-    min-height: 7%;
-    color: white;
-    text-align: center;
-    bottom: 0;
-}
-footer.dark{
-    background: var(--fundoDark);
-    color: var(--fonteDark);
-}
-footer p{
-    top: 50%;
-    transform: translateY(50%);
-}
-/*footer*/
-
+/*troca tema*/
 /*index*/
 #divPerfil{
     margin: auto;
