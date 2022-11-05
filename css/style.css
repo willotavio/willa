@@ -58,8 +58,8 @@ nav.dark a{
 nav ul li{
     display: inline-block;
     top: 50%;
-    transform: translateY(80%);
-    padding: 0px 5px 0px 5px;
+    transform: translateY(50%);
+    padding-left: 0.1rem;
 }
 nav a{
     text-decoration: none;
@@ -68,6 +68,91 @@ nav a{
 nav a:hover{
     color: whitesmoke;
     border-bottom: 1px whitesmoke solid;
+}
+
+.botaoSideBar{
+    background: url("../imgs/svg/menuSand.svg") no-repeat;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    float: left;
+    top: 50%;
+    transform: translateY(10%);
+    transition: 0.2s;
+}
+.botaoSideBar.sideBarAberta{
+    background: url("../imgs/svg/fecharMenu.svg") no-repeat;
+}
+.botaoSideBar:hover{
+    filter: brightness(90%);
+}
+.botaoSideBar.dark.sideBarAberta{
+    background: url("../imgs/svg/fecharMenu.svg") no-repeat;
+    filter: brightness(50%);
+}
+.botaoSideBar.dark{
+    background: url("../imgs/svg/menuSand.svg") no-repeat;
+    filter: brightness(50%);
+}
+.botaoSideBar.dark:hover{
+    filter: brightness(70%);
+}
+#conteudoSideBar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background-color: ghostwhite;
+  border-top-left-radius: 3px;
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+#conteudoSideBar.dark{
+    background: var(--fundoDark);
+}
+#conteudoSideBar a{
+    color: var(--fontePrincipal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+#conteudoSideBar a:hover{
+    filter: brightness(130%);
+}
+#conteudoSideBar.dark a{
+    color: var(--fonteDark);
+}
+#conteudoSideBar hr{
+    background-color: #FB50A3;
+    height: 1px;
+    border: 0;
+}
+#conteudoSideBar.dark hr{
+    background-color: var(--fonteDark);
+}
+.headerSideBar{
+    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+}
+.botaoFecharSideBar{
+    font-size: 2.5rem;
+    float: right;
+}
+.botaoFecharSideBar:hover{
+    filter: brightness(90%);
+}
+.fotoPerfilSideBar{
+    border-radius: 50%;
+    border: 2px solid #FB50A3
+}
+.fotoPerfilSideBar.dark{
+    border: 2px solid var(--fonteDark);
+    filter: brightness(80%);
+}
+.bodySideBar{
+    margin: 1rem 1rem 0 1rem;
+    font-size: 18px;
 }
 /*navbar*/
 
@@ -100,7 +185,7 @@ footer p{
     border: none;
     width: 2rem;
     height: 2rem;
-    margin: 0.1rem 0.1rem;
+    margin: 1rem 0.1rem 0 0.1rem;
     border-radius: 5px;
     background: url('../imgs/svg/light.svg') no-repeat;
 }
@@ -180,7 +265,7 @@ footer p{
 }
 @media (max-width: 500px) and (min-width: 300px){
     footer{
-        position: absolute;
+        position: relative;
     }
 
 }
