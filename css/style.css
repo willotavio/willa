@@ -24,6 +24,12 @@ html{
     background: rgb(173, 173, 173);
     border-radius: 2px;
 }
+.light{
+    transition: 0.15s;
+}
+.dark{
+    transition: 0.15s;
+}
 /*scrollbar*/
 body{
     background: var(--fundoPrincipal);
@@ -101,13 +107,12 @@ nav a:hover{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1001;
-  top: 0;
+  z-index: 1000;
+  top: 5%;
   left: 0;
   background-color: ghostwhite;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   overflow-x: hidden;
-  transition: 0.2s;
 }
 #conteudoSideBar.dark{
     background: var(--fundoDark);
@@ -134,13 +139,6 @@ nav a:hover{
 }
 .headerSideBar{
     padding: 0.2rem 0.5rem 0.2rem 0.2rem;
-}
-.botaoFecharSideBar{
-    font-size: 2.5rem;
-    float: right;
-}
-.botaoFecharSideBar:hover{
-    filter: brightness(90%);
 }
 .fotoPerfilSideBar{
     border-radius: 50%;
@@ -232,6 +230,55 @@ footer p{
 }
 .conteudoPerfil{
     margin: 2rem 2rem;
+}
+#currentLearning.dark{
+    filter: brightness(80%);
+}
+#currentLearning li{
+    list-style: none;
+    margin: 1rem 0.1rem 0 0.1rem;
+    padding: 0;
+    display: inline-block;
+}
+#htmlLang{
+    background: url("../imgs/svg/languages/light/html5.svg") no-repeat;
+    width: 3rem;
+    height: 3rem;
+}
+#cssLang{
+    background: url("../imgs/svg/languages/light/css3.svg") no-repeat;
+    width: 3rem;
+    height: 3rem;
+}
+#jsLang{
+    background: url("../imgs/svg/languages/light/javascript.svg") no-repeat;
+    width: 3rem;
+    height: 3rem;    
+}
+#bsLang{
+    background: url("../imgs/svg/languages/light/bootstrap.svg") no-repeat;
+    width: 3rem;
+    height: 3rem;   
+}
+#pyLang{
+    background: url("../imgs/svg/languages/light/python.svg") no-repeat;
+    width: 3rem;
+    height: 3rem;
+}
+#currentLearning.dark #htmlLang{
+    background: url("../imgs/svg/languages/dark/html5.svg") no-repeat;
+}
+#currentLearning.dark #cssLang{
+    background: url("../imgs/svg/languages/dark/css3.svg") no-repeat;
+}
+#currentLearning.dark #jsLang{
+    background: url("../imgs/svg/languages/dark/javascript.svg") no-repeat;
+}
+#currentLearning.dark #bsLang{
+    background: url("../imgs/svg/languages/dark/bootstrap.svg") no-repeat;
+}
+#currentLearning.dark #pyLang{
+    background: url("../imgs/svg/languages/dark/python.svg") no-repeat;
 }
 .githubStats{
     height: 15rem;

@@ -9,7 +9,12 @@
 </head>
 
 <header>
-    
+    <nav class="light">
+        <ul>
+            <li>Home</li>
+            <button id="btnSideBar" class="botaoSideBar light sideBarFechada">
+        </ul>
+    </nav>
 </header>
 
 <div id="conteudoSideBar" class="sideBar light">
@@ -25,17 +30,9 @@
     </div>
 </div>
 <body class="light">
-
-    <main id="corpoSite">
-        <nav class="light">
-            <ul>
-                <li>Home</li>
-                <button id="btnSideBar" class="botaoSideBar light sideBarFechada">
-            </ul>
-        </nav>
         <div id="divPerfil" class="light">
             <div class="conteudoPerfil">
-                <img onclick="window.open('http://mendrok.com/')" id="imgPerfil" class="light" src="imgs/perfil/sumi-chan.jpg" alt="perfil" width=300">
+                <img onclick="window.open('http://mendrok.com/')" id="imgPerfil" class="light" src="imgs/perfil/sumi-chan.jpg" alt="perfil" width=50%>
                 <h2>ウイラ</h2>
             </div>
             <div class="conteudoPerfil">
@@ -54,9 +51,17 @@
                     </svg></a>
                 </button>
             </div>
-            <div>
-                <p>Welcome to my page!</p>
+            <div class="conteudoPerfil">
+                <h3>Welcome to my page!</h3>
                 <p>Here you can see my current projects and also access my social networks to know me better!</p><br>
+                <h3>Current Learning:</h3>
+                <div id="currentLearning" class="light">
+                    <li id="htmlLang"></li>
+                    <li id="cssLang"></li>
+                    <li id="jsLang"></li>
+                    <li id="bsLang"></li>
+                    <li id="pyLang"></li>
+                </div>
             </div>
             <hr>
             <div class="githubCards light">
@@ -66,7 +71,6 @@
                 </div>
             </div>
         </div>
-    </main>
 
 </body>
 
