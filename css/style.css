@@ -42,7 +42,7 @@ body.dark{
 
 /*navbar*/
 header{
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 nav{
     background: rgba(251, 80, 163, 0.8);
@@ -53,6 +53,7 @@ nav{
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 3rem;
 }
 nav.dark{
     background: rgba(61,61,61,0.8);
@@ -64,8 +65,8 @@ nav.dark a{
 nav ul li{
     display: inline-block;
     top: 50%;
-    transform: translateY(50%);
-    padding-left: 0.1rem;
+    transform: translateY(90%);
+    padding-left: 0.5rem;
 }
 nav a{
     text-decoration: none;
@@ -79,11 +80,11 @@ nav a:hover{
 .botaoSideBar{
     background: url("../imgs/svg/menuSand.svg") no-repeat;
     border: none;
-    height: 2rem;
-    width: 2rem;
+    height: 2.3rem;
+    width: 2.3rem;
     float: left;
     top: 50%;
-    transform: translateY(10%);
+    transform: translateY(15%);
     transition: 0.2s;
 }
 .botaoSideBar.sideBarAberta{
@@ -108,7 +109,7 @@ nav a:hover{
   width: 0;
   position: fixed;
   z-index: 1000;
-  top: 5%;
+  top: 6%;
   left: 0;
   background-color: ghostwhite;
   border-top-right-radius: 3px;
@@ -138,15 +139,10 @@ nav a:hover{
     background-color: var(--fonteDark);
 }
 .headerSideBar{
-    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+    padding: 1rem 0.5rem 1rem 1rem;
 }
-.fotoPerfilSideBar{
-    border-radius: 50%;
-    border: 2px solid #FB50A3
-}
-.fotoPerfilSideBar.dark{
-    border: 2px solid var(--fonteDark);
-    filter: brightness(80%);
+.titleSidebar{
+    display: inline;
 }
 .bodySideBar{
     margin: 1rem 1rem 0 1rem;
@@ -156,13 +152,14 @@ nav a:hover{
 
 /*footer*/
 footer{
-    margin-top: 3rem;
+    margin-top: 4rem;
     background-color: #FB50A3;
     width: 100%;
     min-height: 7%;
     color: white;
     text-align: center;
     bottom: 0;
+    height: 3rem;
 }
 footer.dark{
     background: var(--fundoDark);
@@ -183,7 +180,6 @@ footer p{
     border: none;
     width: 2rem;
     height: 2rem;
-    margin: 1rem 0.1rem 0 0.1rem;
     border-radius: 5px;
     background: url('../imgs/svg/light.svg') no-repeat;
 }
@@ -216,7 +212,7 @@ footer p{
 }
 #imgPerfil{
     border-radius: 50%;
-    border: 5px solid var(--fontePrincipal);
+    border: 0.3rem solid var(--fontePrincipal);
 }
 #imgPerfil.dark{
     border: 5px solid var(--fonteDark);
@@ -255,6 +251,11 @@ footer p{
     width: 3rem;
     height: 3rem;    
 }
+#phpLang{
+    background: url("../imgs/svg/languages/light/php.svg") no-repeat;
+    width: 3rem;
+    height: 3rem;
+}
 #bsLang{
     background: url("../imgs/svg/languages/light/bootstrap.svg") no-repeat;
     width: 3rem;
@@ -273,6 +274,9 @@ footer p{
 }
 #currentLearning.dark #jsLang{
     background: url("../imgs/svg/languages/dark/javascript.svg") no-repeat;
+}
+#currentLearning.dark #phpLang{
+    background: url("../imgs/svg/languages/dark/php.svg") no-repeat;
 }
 #currentLearning.dark #bsLang{
     background: url("../imgs/svg/languages/dark/bootstrap.svg") no-repeat;
