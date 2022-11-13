@@ -202,10 +202,12 @@ footer p{
 #divPerfil{
     margin: auto;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 #divPerfil hr{
     border: 1px solid #FB50A3;
+    width: 50%;
+    margin: auto;
 }
 #divPerfil.dark hr{
     border: 1px solid var(--fonteDark);
@@ -301,17 +303,17 @@ footer p{
 @media (max-width: 1000px){
     .githubStats{
         height: 10rem;
-        background-size: 100%;
+        background-size: 70%;
     }
     .githubStats.dark{
-        background-size: 100%;
+        background-size: 70%;
     }
     .githubLangs{
         height: 10rem;
-        background-size: 100%;
+        background-size: 70%;
     }
     .githubLangs.dark{
-        background-size: 100%;
+        background-size: 70%;
     }
 }
 @media (max-width: 500px) and (min-width: 300px){
