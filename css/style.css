@@ -161,7 +161,7 @@ footer{
     bottom: 0;
     height: 3rem;
 }
-footer.dark{
+body.dark footer{
     background: var(--fundoDark);
     color: var(--fonteDark);
 }
@@ -209,27 +209,27 @@ footer p{
     width: 50%;
     margin: auto;
 }
-#divPerfil.dark hr{
+body.dark #divPerfil hr{
     border: 1px solid var(--fonteDark);
 }
 #imgPerfil{
     border-radius: 50%;
     border: 0.3rem solid var(--fontePrincipal);
 }
-#imgPerfil.dark{
+body.dark #imgPerfil{
     border: 5px solid var(--fonteDark);
     filter: brightness(80%);
 }
 #imgPerfil:hover{
     filter: brightness(90%);
 }
-#imgPerfil:hover.dark{
+body.dark #imgPerfil:hover{
     filter: brightness(70%);
 }
 .conteudoPerfil{
     margin: 2rem 2rem;
 }
-#currentLearning.dark{
+body.dark #currentLearning{
     filter: brightness(80%);
 }
 #currentLearning li{
@@ -268,36 +268,36 @@ footer p{
     width: 3rem;
     height: 3rem;
 }
-#currentLearning.dark #htmlLang{
+body.dark #currentLearning #htmlLang{
     background: url("../imgs/svg/languages/dark/html5.svg") no-repeat;
 }
-#currentLearning.dark #cssLang{
+body.dark #currentLearning #cssLang{
     background: url("../imgs/svg/languages/dark/css3.svg") no-repeat;
 }
-#currentLearning.dark #jsLang{
+body.dark #currentLearning #jsLang{
     background: url("../imgs/svg/languages/dark/javascript.svg") no-repeat;
 }
-#currentLearning.dark #phpLang{
+body.dark #currentLearning #phpLang{
     background: url("../imgs/svg/languages/dark/php.svg") no-repeat;
 }
-#currentLearning.dark #bsLang{
+body.dark #currentLearning #bsLang{
     background: url("../imgs/svg/languages/dark/bootstrap.svg") no-repeat;
 }
-#currentLearning.dark #pyLang{
+body.dark #currentLearning #pyLang{
     background: url("../imgs/svg/languages/dark/python.svg") no-repeat;
 }
 .githubStats{
     height: 15rem;
     background: url('https://github-readme-stats.vercel.app/api?username=willotavio&theme=jolly&show_icons=true') no-repeat center;
 }
-.githubStats.dark{
+body.dark .githubStats{
     background: url('https://github-readme-stats.vercel.app/api?username=willotavio&theme=apprentice&show_icons=true') no-repeat center;
 }
 .githubLangs{
     height: 11rem;
     background: url('https://github-readme-stats.vercel.app/api/top-langs/?username=willotavio&layout=compact&theme=jolly') no-repeat center;
 }
-.githubLangs.dark{
+body.dark .githubLangs{
     background: url('https://github-readme-stats.vercel.app/api/top-langs/?username=willotavio&layout=compact&theme=apprentice') no-repeat center;
 }
 @media (max-width: 1000px){
@@ -305,14 +305,14 @@ footer p{
         height: 10rem;
         background-size: 70%;
     }
-    .githubStats.dark{
+    body.dark .githubStats{
         background-size: 70%;
     }
     .githubLangs{
         height: 10rem;
         background-size: 70%;
     }
-    .githubLangs.dark{
+    body.dark .githubLangs{
         background-size: 70%;
     }
 }
@@ -332,13 +332,13 @@ footer p{
 .botaoRedes:hover{
     filter: brightness(150%);
 }
-.botaoRedes.dark:hover{
+body.dark .botaoRedes:hover{
     filter: brightness(150%);
 }
 .iconRedes{
     color: var(--fontePrincipal);
 }
-.iconRedes.dark{
+body.dark .iconRedes{
     color: var(--fonteDark);
 }
 /*botoes redes sociais*/
