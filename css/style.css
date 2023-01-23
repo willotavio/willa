@@ -268,6 +268,11 @@ body.dark #currentLearning{
     width: 3rem;
     height: 3rem;
 }
+#javaLang{
+    background: url("../imgs/svg/languages/light/java.svg") no-repeat;
+    width: 3rem;
+    height: 3rem;
+}
 body.dark #currentLearning #htmlLang{
     background: url("../imgs/svg/languages/dark/html5.svg") no-repeat;
 }
@@ -285,6 +290,9 @@ body.dark #currentLearning #bsLang{
 }
 body.dark #currentLearning #pyLang{
     background: url("../imgs/svg/languages/dark/python.svg") no-repeat;
+}
+body.dark #currentLearning #javaLang{
+    background: url("../imgs/svg/languages/dark/java.svg");
 }
 .githubStats{
     height: 15rem;
